@@ -1,0 +1,122 @@
+How did viewing a diff between two versions of a 
+file help you see the bug that was introduced?
+
+The easiest answer to this question is that diff, to begin with,
+only shows the differences between the two files. Thus, it is
+possible to ignore the vast majority of the code within your files,
+since none of them differ and need to be changed (and probably
+should not be changed to make sure the code doesn't break any
+further).
+
+diff also provides you with symbols to tell you what kind of
+changes were made to the lines, such as a + for an added line and 
+- for deleted lines.
+
+With the -u option, diff also provides you with the lines in
+each file that contain the differences, flanked by some more lines
+to give you the context of the changes (and figure out the actual
+change that broke your code).
+
+
+How could having easy access to the entire history of a file
+make you a more efficient programmer in the long term?
+
+If you have access to your entire history, and not just your
+final products, you will be able to track back to previous versions
+of a code that might have worked better, or took a completely
+different approach to solve a certain problem. It allows you to
+revert back to previous versions if a new version doesn't work
+as well or is broken due to the changes. Basically, it allows you
+keep track of all the changes that you've made to your code,
+effectively keeping track of YOUR changes as a programmer.
+
+What do you think are the pros and cons of manually choosing
+when to create a commit, like you do in Git, vs having versions
+automatically saved, like Google Docs does?
+
+Pros: You can decide when to commit, so different versions will
+have logical differences, such as a fixed typo or new feature.
+You also will not have a HUGE number of different versions since
+the commit won't be happening all the time. Later on, it'll be
+easier to find the certain version you want that has the substantial
+change, and you will be able to find it due to the comments that
+you put on the commit.
+
+Cons: The committing point will depend on the developer, and thus
+will vary from person to person. Some people might commit too
+often for trivial changes, while others might not commit enough
+and make too many changes per commit. Also, if you forget to
+commit at a certain point, then tough luck- your versions will
+have a lot of differences.
+
+
+Why do you think some version control systems, like Git, allow
+saving multiple files in one commit, while others, like Google
+Docs, treat each file separately?
+
+Git was developed by Linus Torvalds as a version-control system to
+keep track of his Linux development, so the philosphy that was
+employed during the development of the version-control system was
+to make something that kept a "snapshot" of the entire OS system for
+each commit. This made it essential that GIt allow saving multiple
+files in one commit, since OSs are not just one file, but a huge
+collection of multiple files working with the hardware of the
+computer. On the other hand, Google Docs was created to allow
+simultaneous editing of a single file by multiple participants, and
+thus keeps automatic commits at certain time points. Because there
+is no way to to tell whether files are interrelated, and also because
+with multiple people editing the same file, it is nearly impossible
+to make manual commits of a group of files without causing some
+issues. Thus, Google Docs only supports single file version-control.
+
+
+How can you use the commands git log and git diff to view the
+history of files?
+
+Once you've used cd to get into the repository that you want to look
+through, you can use git log to see an entire list of current and
+past commits in your console. git log shows each commit, as well as
+the comment that was added to the commit when the user created that
+commit. This allows you to identify the specific commit that you 
+are interested in. Once identified, you can use the commid IDs to
+compare two different commits by using git diff. git diff will give
+you a list of the changes in the code, including deleted and added
+lines. Symbols indicate the changes made, but color can be added to
+indicate whether the line was added or deleted as well.
+
+
+How might using version control make you more confident to make
+changes that could break something?
+
+By using version control, you can instantly revert back to a previous
+state before you had made that change. Thus if you make changes that
+could break something, you know that you have a previous version
+that works properly that you can always fall back on, allowing you
+to be more confident in making changes without risking the whole
+project.
+
+
+Now that you have your workspace set up, what do you want to try
+using Git for?
+
+There are a couple projects that I would like to create before I am
+ready to move on from my current job. The first project would be a
+personal website showcasing all of my programming works- I am currently
+learning how to use Git and Github to have a central location for all
+of my code, but hope to have a place online that I can direct potential
+employers to in order to secure further employment. Git will be a
+perfect version-control system to implement, as a website contains
+multiple files (HTML, CSS, and Javascript) that all talk to each other
+in order to enable the final product. Thus, all three files need to be
+committed together in order to maintain integrity of the project. Also,
+having a past version of my website allows me to revert to it if adding
+another feature breaks my website, making sure that potential employers
+always have access to a working website.
+
+In the future, I would also like to delve deeper into either machine
+learning, artificial intelligence, or embedded systems. These areas deal
+with very long and complex code that is easy to break with a simple typo
+and syntax error (and, in some cases, result with a loss of billions of
+dollars). Thus, by using Git, I hope to be able to minimize the breaking
+of code, and if there is a break, a quick way to revert back to a
+previous version in order to identify what broke the code.
