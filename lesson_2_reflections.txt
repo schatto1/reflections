@@ -86,3 +86,21 @@ additions from both branches, and deletions that are present in
 even just one branch. It is represented as such in the diagram 
 because the child commit now contains the changes from both
 branches, and thus has two parents.
+
+
+What are the pros and cons of Git’s automatic merging vs. 
+always doing merges manually?
+
+Pros of automatic merging is that it is quick and requires no
+input from the user when the two branches are working on
+completely different parts of the project and there is no 
+overlap in the changes in the code. Less communication between
+the devs needed, and the merge can be done very quickly. However,
+if the changes are done on the same parts of the code and one
+branch's dependency breaks, the devs need to communicate to make
+sure that the changes kept do not break the entire project.
+If done manually every time, you can make sure that changes on
+both sides of the merge do not break the other side each time.
+However, this would require communication between devs each time,
+and the merger will need to be aware of the changes that were
+made in the other branch.
