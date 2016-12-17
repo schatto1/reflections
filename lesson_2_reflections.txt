@@ -70,3 +70,19 @@ branch, and are also helpful in letting you identify which
 commits have common parents, and where these branches had
 forked. It also let's you see which commits are unreachable
 and prompt you to fix that quickly.
+
+
+What is the result of merging two branches together? Why do we
+represent it in the diagram the way we do?
+
+The result of merging two branches together is a child commit
+that has two parents, one from each of the branch that is merged.
+The commit will compare the two branches to the last commit 
+before the two branches separated, thus deciphering whether a
+change within a branch is a simple deletion from the original or
+a new addition. Merge will determine whether the changes are
+necessary for the final product, and the final commit will contain
+additions from both branches, and deletions that are present in
+even just one branch. It is represented as such in the diagram 
+because the child commit now contains the changes from both
+branches, and thus has two parents.
