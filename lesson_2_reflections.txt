@@ -32,3 +32,17 @@ case the staging area is not identical to the repository. The
 staging area allows you to choose when and what to commit, so
 that you can make sure that each commit happens after only one
 logical change.
+
+
+How can you use the staging area to make sure you have one
+commit per logical change?
+
+The staging area allows you to choose which files to commit
+when. Hence, if you make changes to multiple files at once,
+and each change is a different logical change, you can decide
+to commit one file, but not the others, making sure that each
+commit is only one logical change. You can also make sure
+that each commit only has one logical change by using git diff
+to see the difference within the files between your staging
+area and the working directory, as well as the staging area
+and your most recent commit.
