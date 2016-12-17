@@ -46,3 +46,19 @@ that each commit only has one logical change by using git diff
 to see the difference within the files between your staging
 area and the working directory, as well as the staging area
 and your most recent commit.
+
+
+What are some situations when branches would be helpful in 
+keeping your history organized? How would branches help?
+
+A branch would be helpful in situations where you would need
+two different "versions" of a project progressing simultaneously.
+An example would be when you have a master branch that has
+already been commercialized and available to the public, while
+you have another different branch with experimental features
+that are not yet stable and ready for publication, but need to
+be within the project in order to test fully. The branches will
+allow you to make independent changes to each branch without
+worrying about the different changes creating a catastrophe
+that makes your entire project unusable.
+
