@@ -62,3 +62,11 @@ allow you to make independent changes to each branch without
 worrying about the different changes creating a catastrophe
 that makes your entire project unusable.
 
+
+How do the diagrams help you visualize the branch structure?
+
+The diagrams let you see which commits are in line for that
+branch, and are also helpful in letting you identify which
+commits have common parents, and where these branches had
+forked. It also let's you see which commits are unreachable
+and prompt you to fix that quickly.
