@@ -59,3 +59,23 @@ and remote copies. Hence, when pulling from an updated remote
 copy, Git is essentially doing a "merge" between the local copy
 of the remote, and the remote copy, and then merging that with
 your updated local copy.
+
+
+How would you collaborate without using Git or GitHub? What
+would be easier, and what would be harder?
+
+There are several options- the first one would be to use a 
+cloud-based text editing software, such as Google Docs, to
+update and change source code of a collaborative project. This
+allows multiple people to access the source code, and change it
+at the same time. However, this can only be done online, when you
+have a reliable internet connection. Also, multiple people will
+be "working" on the same file, so it will be hard to track each
+logical change that a collaborator makes, plus you may ened up
+working on the same part at the same time. Another option is to
+simply email each other a copy of the source code and work
+independently, and then merge these two files. No internet
+connection is needed, and each person can keep track of each 
+logical change; however, you will have to maually keep track of
+each change, and also manually figure out which changes are 
+needed and which are not.
