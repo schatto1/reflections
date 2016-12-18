@@ -1,0 +1,17 @@
+When would you want to use a remote repository rather than keeping all
+your work local?
+
+You would want to use your remote repository when you are working on a 
+collaborative project with multiple people, from a different machine as
+your usual workstation, or if your workstation does not have the storage
+capacity to have the complete project saved on it's hard disk. When
+working on a collaborative project, using a remote repository allows you
+and your collaborators to have one central repository to refer to, and 
+decreases the number of times branches are created or merged. If working
+from a machine that is different from your usual workstation, if your
+project is on a remote repository, you can instantly sync the progress
+onto your current workstation, make the changes, and then push it back
+to the remote repository, so you can update the local copy on your main
+workstation later. You can also push projects to your remote repository,
+and if possible and prudent, get rid of the local copy, freeing up some
+space on your local drive.
