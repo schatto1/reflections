@@ -79,3 +79,23 @@ connection is needed, and each person can keep track of each
 logical change; however, you will have to maually keep track of
 each change, and also manually figure out which changes are 
 needed and which are not.
+
+
+When would you want to make changes in a separate branch rather
+than directly in master? What benefits does each approach have?
+
+You would want to make changes in a separate branch when you are
+not entirely sure that the changes will be permanent, or if the 
+changes will published to the general public. This way, you can
+keep master as your final product, while experimenting on different
+features on another branch. This will also allow you to merge
+other's changes into different branches before the local master,
+so that you can determine whether some changes are necessary or not.
+However, making changes directly in master will get rid of the 
+need to do tedious merge requests, as well as resolving merge
+conflicts that may arise if you and a collaborator are working on
+the same sections of code. However, by being on a different branch,
+you can prevent catastrophic changes to master that may end up
+breaking your code. You will be able to detect this in your other
+branch, and then revert back to master which does not have these
+detrimental changes.
